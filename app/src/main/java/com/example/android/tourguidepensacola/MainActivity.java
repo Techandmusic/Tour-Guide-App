@@ -1,0 +1,19 @@
+package com.example.android.tourguidepensacola;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+// TODO Add cardView xml file for list items
+// TODO Add RecyclerView to hold CardViews
+// TODO Create Fragments for lists
+// TODO Create ViewPager
+// TODO Create Tabs and tabView for navigation
