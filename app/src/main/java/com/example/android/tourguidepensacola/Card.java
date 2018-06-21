@@ -23,11 +23,11 @@ public class Card {
     }
 
     //getter methods for accessing private variables
-    public getCardName() { return cardName; }
+    public String getCardName() { return cardName; }
 
-    public getCardAbout() { return cardAbout; }
+    public String getCardAbout() { return cardAbout; }
 
-    public getCardImage() { return cardImageID; }
+    public int getCardImage() { return cardImageID; }
 
     //Returns whether not an image is supplied for this card
     //May be removed later if not needed

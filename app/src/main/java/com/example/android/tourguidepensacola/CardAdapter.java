@@ -33,7 +33,7 @@ public class CardAdapter extends ArrayAdapter<Card> {
 
         // Set ImageView to Image Resource ID if the card has an image
         if (currentCard.hasImage()) {
-            cardImageView.setImageResource(currentCard.getCardImage());
+            cardImageView.setImageResource();
         }
     }
 }
