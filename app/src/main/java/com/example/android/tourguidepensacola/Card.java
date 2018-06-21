@@ -1,6 +1,6 @@
 package com.example.android.tourguidepensacola;
 
-public class Cards {
+public class Card {
 
     //Name of the location on the card
     private String cardName;
@@ -16,18 +16,18 @@ public class Cards {
     private static final int NO_IMAGE_PROVIDED -1;
 
     //Class constructor
-    Cards(String name, String about, int imageResourceID) {
+    Card(String name, String about, int imageResourceID) {
         cardName = name;
         cardAbout = about;
         cardImageID = imageResourceID;
     }
 
     //getter methods for accessing private variables
-    public getCardName() { return cardName; }
+    public Card() { return cardName; }
 
-    public getCardAbout() { return cardAbout; }
+    public Card() { return cardAbout; }
 
-    public getImageResourceID() { return cardImageID; }
+    public Card() { return cardImageID; }
 
     //Returns whether not an image is supplied for this card
     //May be removed later if not needed
