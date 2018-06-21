@@ -8,9 +8,9 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
         android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        card_view:cardCornerRadius="4dp">
+        android:layout_width="@dimen/card_edges"
+        android:layout_height="@dimen/card_edges"
+        card_view:cardCornerRadius="@dimen/corners">
 
         <ImageView
             android:layout_width="match_parent"
