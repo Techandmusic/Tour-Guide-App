@@ -18,4 +18,4 @@ public class MainActivity extends AppCompatActivity {
 // TODO Create ViewPager
 // TODO Create Tabs and tabView for navigation
 // TODO Create Location class to store information for cards (custom object) (Done)
-// TODO Create custom adapter to populate cards from instances for the class
+// TODO Create custom adapter to populate cards from instances for the class (Done)
