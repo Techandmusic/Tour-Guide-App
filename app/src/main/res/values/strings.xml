@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Tour Guide Pensacola</string>
+    <string name="card_test_1">Card Name</string>
+    <string name="card_test_2">This is some information about the card</string>
+    <string name="card_test_3">Second Card Name</string>
+    <string name="card_test_4">Info about the second card</string>
 </resources>
