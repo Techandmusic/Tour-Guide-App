@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="@dimen/card_edges"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/medium_margin"
+    card_view:cardCornerRadius="@dimen/corners">
 
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
-        android:layout_gravity="center"
-        android:layout_width="@dimen/card_edges"
-        android:layout_height="@dimen/card_edges"
-        card_view:cardCornerRadius="@dimen/corners">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/card_image"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/xl_margin"
-            android:id="@+id/card_image"/>
+            android:layout_height="@dimen/xl_margin" />
 
         <TextView
+            android:id="@+id/card_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/card_name"/>
+            android:layout_below="@+id/card_image"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginLeft="@dimen/medium_margin"/>
 
         <TextView
+            android:id="@+id/card_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/card_about"/>
+            android:layout_below="@+id/card_name"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginLeft="@dimen/medium_margin"/>
 
 
+    </RelativeLayout>
 
-    </android.support.v7.widget.CardView>
+
+</android.support.v7.widget.CardView>
 
 
-</LinearLayout>
