@@ -51,16 +51,14 @@ public class CustomCardAdapter extends RecyclerView.Adapter<CustomCardAdapter.Ca
     @Override
     public void onBindViewHolder(CardHolder holder, int position) {
         Card currentCard = cards.get(position);
-        int imageResource = Card.getCardImage();
-        holder.cardImage.setImageResource(Card.getCardImage());
-        holder.cardName.setText(Card.getCardName());
-        holder.cardAbout.setText(Card.getCardAbout());
+        holder.cardImage.setImageResource(currentCard.getCardImage());
+        holder.cardName.setText(currentCard.getCardName());
+        holder.cardAbout.setText(currentCard.getCardAbout());
 
     }
 
     @Override
     public int getItemCount() {
-
-        return 0;
+        return cards.size();
     }
 }
