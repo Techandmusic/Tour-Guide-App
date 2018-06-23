@@ -4,4 +4,6 @@
     <string name="card_test_2">This is some information about the card</string>
     <string name="card_test_3">Second Card Name</string>
     <string name="card_test_4">Info about the second card</string>
+    <string name="card_test_5">Third Card Name</string>
+    <string name="card_test_6">Info about thr third card</string>
 </resources>

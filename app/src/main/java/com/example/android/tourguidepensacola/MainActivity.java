@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Card> testCards = new ArrayList<Card>();
         testCards.add(new Card(getString(R.string.card_test_1), getString(R.string.card_test_2), R.drawable.android_party));
         testCards.add(new Card(getString(R.string.card_test_3), getString(R.string.card_test_4), R.drawable.brisketsandwich));
+        testCards.add(new Card(getString(R.string.card_test_5), getString(R.string.card_test_6), R.drawable.after_cookie));
 
 
         CustomCardAdapter adapter = new CustomCardAdapter(this, testCards);
@@ -37,4 +38,5 @@ public class MainActivity extends AppCompatActivity {
 // TODO Create Tabs and tabView for navigation
 // TODO Create Location class to store information for cards (custom object) (Done)
 // TODO Create custom adapter to populate cards from instances for the class (Done)
-// TODO Fix positioning and spacing os items on cards to get the look right
+// TODO Fix positioning and spacing of items on cards to get the look right (Done)
+// TODO Add visual polish to app
