@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/card_edges"
     android:layout_gravity="center"
-    android:layout_marginTop="@dimen/corners"
     android:layout_marginBottom="@dimen/medium_margin"
     android:layout_marginLeft="@dimen/small_margin"
     android:layout_marginRight="@dimen/small_margin"
+    android:layout_marginTop="@dimen/corners"
     card_view:cardCornerRadius="@dimen/corners">
 
     <RelativeLayout
@@ -20,20 +20,20 @@
             android:id="@+id/card_image"
             android:layout_width="match_parent"
             android:layout_height="@dimen/xl_margin"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"/>
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/card_name"
-            android:layout_below="@+id/card_image"
             style="@style/TextViewStyle"
+            android:layout_below="@+id/card_image"
             android:textSize="@dimen/name_text"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/card_about"
-            android:layout_below="@+id/card_name"
-            style="@style/TextViewStyle" />
+            style="@style/TextViewStyle"
+            android:layout_below="@+id/card_name" />
 
 
     </RelativeLayout>

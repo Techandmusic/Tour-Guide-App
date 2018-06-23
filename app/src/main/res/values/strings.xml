@@ -6,4 +6,34 @@
     <string name="card_test_4">Info about the second card</string>
     <string name="card_test_5">Third Card Name</string>
     <string name="card_test_6">Info about thr third card</string>
+
+    <!--restaurant names -->
+    <string name="restaurant_1_name">The Oar House</string>
+    <string name="restaurant_2_name">The Fish House</string>
+    <string name="restaurant_3_name">Jerry\'s Drive In</string>
+    <string name="restaurant_4_name">Dharma Blue</string>
+    <string name="restaurant_5_name">Georgio\'s Pizza</string>
+    <string name="restaurant_6_name">Elbow Room</string>
+
+    <!--museum names -->
+    <string name="museum_1_name">Naval Aviation Museum</string>
+    <string name="museum_2_name">T.T. Wentworth Jr. Florida State Museum</string>
+    <string name="museum_3_name">Pensacola Museum of Art</string>
+    <string name="museum_4_name">Museum of Commerce</string>
+    <string name="museum_5_name">Museum of Industry</string>
+    <string name="museum_6_name">Pensacola Children\'s Museum</string>
+
+    <!--park names -->
+    <string name="park_1_name">Bartram Park</string>
+    <string name="park_2_name">Bayview Park</string>
+    <string name="park_3_name">Veterans Memeorial Park</string>
+    <string name="park_4_name">Seville Square</string>
+
+    <!--historical site names -->
+    <string name="site_1_name">Dorr House</string>
+    <string name="site_2_name">Fort Pickens</string>
+    <string name="site_3_name">Fort Barrancas</string>
+    <string name="site_4_name">Fort George</string>
+    <string name="site_5_name">Crystal Ice House</string>
+    <string name="site_6_name">The Graffiti Bridge</string>
 </resources>

@@ -17,26 +17,11 @@ public class CustomCardAdapter extends RecyclerView.Adapter<CustomCardAdapter.Ca
     private Context context;
     private LayoutInflater inflater;
 
-    public class CardHolder extends RecyclerView.ViewHolder {
-        public ImageView cardImage;
-        public TextView cardName;
-        public TextView cardAbout;
-
-        public CardHolder(View cardView){
-            super(cardView);
-
-            cardImage = (ImageView) cardView.findViewById(R.id.card_image);
-            cardName = (TextView) cardView.findViewById(R.id.card_name);
-            cardAbout = (TextView) cardView.findViewById(R.id.card_about);
-        }
-    }
-
     public CustomCardAdapter(Context context, ArrayList<Card> cards) {
         this.inflater = LayoutInflater.from(context);
         this.cards = cards;
 
     }
-
 
     @Override
     public CardHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -44,9 +29,7 @@ public class CustomCardAdapter extends RecyclerView.Adapter<CustomCardAdapter.Ca
         return new CardHolder(view);
 
 
-
     }
-
 
     @Override
     public void onBindViewHolder(CardHolder holder, int position) {
@@ -60,5 +43,19 @@ public class CustomCardAdapter extends RecyclerView.Adapter<CustomCardAdapter.Ca
     @Override
     public int getItemCount() {
         return cards.size();
+    }
+
+    public class CardHolder extends RecyclerView.ViewHolder {
+        public ImageView cardImage;
+        public TextView cardName;
+        public TextView cardAbout;
+
+        public CardHolder(View cardView) {
+            super(cardView);
+
+            cardImage = (ImageView) cardView.findViewById(R.id.card_image);
+            cardName = (TextView) cardView.findViewById(R.id.card_name);
+            cardAbout = (TextView) cardView.findViewById(R.id.card_about);
+        }
     }
 }
