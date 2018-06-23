@@ -31,12 +31,11 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-// TODO Add cardView xml file for list items (Done)
-// TODO Add RecyclerView to hold CardViews (Done)
+
+// TODO Add Location Descriptions to strings.xml
+// TODO Import location images to drawable folder
 // TODO Create Fragments for lists
 // TODO Create ViewPager
 // TODO Create Tabs and tabView for navigation
-// TODO Create Location class to store information for cards (custom object) (Done)
-// TODO Create custom adapter to populate cards from instances for the class (Done)
-// TODO Fix positioning and spacing of items on cards to get the look right (Done)
+// TODO Modify MainActivity to use tabView for navigation
 // TODO Add visual polish to app
