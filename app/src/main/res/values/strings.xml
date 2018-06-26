@@ -15,6 +15,14 @@
     <string name="restaurant_5_name">Georgio\'s Pizza</string>
     <string name="restaurant_6_name">Elbow Room</string>
 
+    <!--restaurant descriptions -->
+    <string name="restaurant_1_about">American fare, with Marina views, and occasional live music.</string>
+    <string name="restaurant_2_about">Waterfront seafood restaurant with a bar, and live music nightly.</string>
+    <string name="restaurant_3_about">Local favorite famous for their bacon cheeseburgers.</string>
+    <string name="restaurant_4_about">Cozy cafe serving everything from sushi to pork tenderloin.</string>
+    <string name="restaurant_5_about">Casual restaurant offering pizza along with other Italian, and Greek fare.</string>
+    <string name="restaurant_6_about">Local bar serving pizza, and sandwiches. Known for its vintage jukebox, and Star Trek themed decor.</string>
+
     <!--museum names -->
     <string name="museum_1_name">Naval Aviation Museum</string>
     <string name="museum_2_name">T.T. Wentworth Jr. Florida State Museum</string>
@@ -23,11 +31,26 @@
     <string name="museum_5_name">Museum of Industry</string>
     <string name="museum_6_name">Pensacola Children\'s Museum</string>
 
+    <!--museum descriptions -->
+    <string name="museum_1_about">Military and aerospace museum located aboard NAS Pensacola.</string>
+    <string name="museum_2_about">Museum of Florida history located in Downtown Pensacola</string>
+    <string name="museum_3_about">Pensacola\'s one and only art museum. Located in historic downtown.</string>
+    <string name="museum_4_about">Historic museum with an 1890s streetscape.</string>
+    <string name="museum_5_about">Historic museum showcasing the industries that built Pensacola.</string>
+    <string name="museum_6_about">Kid friendly museum devoted to Pensacola history with interactive exhibits.</string>
+
+
     <!--park names -->
     <string name="park_1_name">Bartram Park</string>
     <string name="park_2_name">Bayview Park</string>
     <string name="park_3_name">Veterans Memeorial Park</string>
     <string name="park_4_name">Seville Square</string>
+
+    <!--park descriptions -->
+    <string name="park_1_about">Outdoor recreation area near the water with paved paths and benches.</string>
+    <string name="park_2_about">Bayside park with picnic areas, walking trails, dog park, playground, and tennis courts.</string>
+    <string name="park_3_about">Tranquil park featuring many war and military monuments.</string>
+    <string name="park_4_about">Small park with oak trees and a gazebo. Hosting many events on weekends.</string>
 
     <!--historical site names -->
     <string name="site_1_name">Dorr House</string>
@@ -36,4 +59,13 @@
     <string name="site_4_name">Fort George</string>
     <string name="site_5_name">Crystal Ice House</string>
     <string name="site_6_name">The Graffiti Bridge</string>
+
+    <!--historical site descriptions -->
+    <string name="site_1_about">Historic home built in 1871.</string>
+    <string name="site_2_about">Histroic military fort on Santa Rosa island.</string>
+    <string name="site_3_about">Military fort and historic landmark, located on NAS Pensacola.</string>
+    <string name="site_4_about">Former British fort built in 1778 for the protection of Pensacola. Has been partially re-created for historical signifigance.</string>
+    <string name="site_5_about">Ice house built in 1932 and still standing. One pf Pensacola\'s historic landmarks.</string>
+    <string name="site_6_about">Railroad bridge over 17th avenue where local artists showcase their talents.</string>
+
 </resources>

@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-// TODO Add Location Descriptions to strings.xml
+// TODO Add Location Descriptions to strings.xml (Done)
 // TODO Import location images to drawable folder
 // TODO Create Fragments for lists
 // TODO Create ViewPager
