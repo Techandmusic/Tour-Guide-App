@@ -7,6 +7,12 @@
     <string name="card_test_5">Third Card Name</string>
     <string name="card_test_6">Info about thr third card</string>
 
+    <!--tab titles -->
+    <string name="restaurant_title">Restaurants</string>
+    <string name="park_title">Parks</string>
+    <string name="museum_title">Museums</string>
+    <string name="historical_title">Historical Sites</string>
+
     <!--restaurant names -->
     <string name="restaurant_1_name">The Oar House</string>
     <string name="restaurant_2_name">The Fish House</string>
