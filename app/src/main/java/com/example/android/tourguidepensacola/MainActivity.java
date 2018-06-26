@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<Card> testCards = new ArrayList<Card>();
-        testCards.add(new Card(getString(R.string.card_test_1), getString(R.string.card_test_2), R.drawable.android_party));
-        testCards.add(new Card(getString(R.string.card_test_3), getString(R.string.card_test_4), R.drawable.brisketsandwich));
-        testCards.add(new Card(getString(R.string.card_test_5), getString(R.string.card_test_6), R.drawable.propic));
+        testCards.add(new Card(getString(R.string.card_test_1), getString(R.string.card_test_2), R.drawable.fort_george));
+        testCards.add(new Card(getString(R.string.card_test_3), getString(R.string.card_test_4), R.drawable.jerrys_drive_in));
+        testCards.add(new Card(getString(R.string.card_test_5), getString(R.string.card_test_6), R.drawable.avation_museum));
 
 
         CustomCardAdapter adapter = new CustomCardAdapter(this, testCards);
@@ -33,9 +33,27 @@ public class MainActivity extends AppCompatActivity {
 
 
 // TODO Add Location Descriptions to strings.xml (Done)
-// TODO Import location images to drawable folder
-// TODO Create Fragments for lists
+// TODO Import location images to drawable folder (Done)
+// TODO Create Fragments for lists (Partially done)
 // TODO Create ViewPager
 // TODO Create Tabs and tabView for navigation
 // TODO Modify MainActivity to use tabView for navigation
 // TODO Add visual polish to app
+
+/* Image attribution
+*  theoarhouse.com
+*  tripadvisor.com
+*  leftatthefork.net
+*  yelp.com
+*  mygeorgiospizza.com
+*  zagat.com
+*  flickr.com
+*  historicpensacola.org
+*  pulsegulfcoast.com
+*  cityofpensacola.com
+*  gibbons-realty.com
+*  city-data.com
+*  filmnorthflorida.com
+*  pnj.com
+*  roadsideamerica.com
+*  pinterest.com*/
