@@ -1,15 +1,18 @@
 package com.example.android.tourguidepensacola;
 
+import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class TourGuidePagerAdapter extends FragmentPagerAdapter {
+    private Context mContext;
 
 
     public TourGuidePagerAdapter(FragmentManager fm) {
         super(fm);
+        mContext = Context;
     }
 
     @Override
@@ -36,6 +39,17 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return super.getPageTitle(position);
+        switch (position) {
+            case 0:
+                return mContext.getString(R.string.restaurant_title);
+            case 1:
+                return mContext.getString(R.string.museum_title);
+            case 2:
+                return mContext.getString(R.string.park_title);
+            case 3:
+                return mContext.getString(R.string.historical_title);
+            default:
+                return null;
+        }
     }
 }
