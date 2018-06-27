@@ -4,14 +4,38 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 public class museumFragment extends Fragment {
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment, container, false);
+
+
+        ArrayList<Card> cards = new ArrayList<>();
+        cards.add(new Card(getString(R.string.museum_1_name), getString(R.string.museum_1_about), R.drawable.avation_museum));
+        cards.add(new Card(getString(R.string.museum_2_name), getString(R.string.museum_2_about), R.drawable.wentworth_museum));
+        cards.add(new Card(getString(R.string.museum_3_name), getString(R.string.museum_3_about), R.drawable.pmaphoto));
+        cards.add(new Card(getString(R.string.museum_4_name), getString(R.string.museum_4_about), R.drawable.museum_of_commerce));
+        cards.add(new Card(getString(R.string.museum_5_name), getString(R.string.museum_5_about), R.drawable.museum_of_industry));
+        cards.add(new Card(getString(R.string.museum_6_name), getString(R.string.museum_6_about), R.drawable.childrens_museum));
+
+        CustomCardAdapter adapter = new CustomCardAdapter(cards);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
+
+        return view;
+
+
+
+
     }
 }
