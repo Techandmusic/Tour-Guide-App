@@ -1,7 +1,6 @@
 package com.example.android.tourguidepensacola;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,14 +9,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class CustomCardAdapter extends RecyclerView.Adapter<CustomCardAdapter.CardHolder> {
     private ArrayList<Card> cards;
     private Context context;
     private LayoutInflater inflater;
 
-    public CustomCardAdapter(Context context, ArrayList<Card> cards) {
+    public CustomCardAdapter(museumFragment context, ArrayList<Card> cards) {
         this.inflater = LayoutInflater.from(context);
         this.cards = cards;
 

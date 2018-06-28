@@ -13,15 +13,27 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class parkFragment extends Fragment {
+
+    public parkFragment() {
+    }
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment, container, false);
 
-        ArrayList<Card> cards = new ArrayList<>();
-        cards.add(new Card(getString(R.string.park_1_name), getString(R.string.park_1_about), R.drawable.bartram_park));
-        cards.add(new Card(getString(R.string.park_2_name), getString(R.string.park_2_about), R.drawable.bayview_park));
-        cards.add(new Card(getString(R.string.park_3_name), getString(R.string.park_3_about), R.drawable.veterans_park));
-        cards.add(new Card(getString(R.string.park_4_name), getString(R.string.park_4_about), R.drawable.seville_square));
+        RecyclerView recycle = (RecyclerView) view.findViewById(R.id.recycler_view);
+        recycle.setHasFixedSize(true);
+        recycle.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        ArrayList<Card> parkCards = new ArrayList<>();
+        parkCards.add(new Card(getString(R.string.park_1_name), getString(R.string.park_1_about), R.drawable.bartram_park));
+        parkCards.add(new Card(getString(R.string.park_2_name), getString(R.string.park_2_about), R.drawable.bayview_park));
+        parkCards.add(new Card(getString(R.string.park_3_name), getString(R.string.park_3_about), R.drawable.veterans_park));
+        parkCards.add(new Card(getString(R.string.park_4_name), getString(R.string.park_4_about), R.drawable.seville_square));
+
+        CustomCardAdapter parkAdapter = new CustomCardAdapter(this, parkCards);
+        recycle.setAdapter(parkAdapter);
 
 
         return view;

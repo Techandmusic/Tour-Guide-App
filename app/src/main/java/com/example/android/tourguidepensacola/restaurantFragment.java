@@ -13,10 +13,16 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class restaurantFragment extends Fragment {
-    @Nullable
+
+    public restaurantFragment() {}
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment, container, false);
+
+        RecyclerView recycle = (RecyclerView) view.findViewById(R.id.recycler_view);
+        recycle.setHasFixedSize(true);
+        recycle.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         ArrayList<Card> cards = new ArrayList<>();
         cards.add(new Card(getString(R.string.restaurant_1_name), getString(R.string.restaurant_1_about), R.drawable.oar_house));
@@ -25,6 +31,9 @@ public class restaurantFragment extends Fragment {
         cards.add(new Card(getString(R.string.restaurant_4_name), getString(R.string.restaurant_4_about), R.drawable.dharma_blue));
         cards.add(new Card(getString(R.string.restaurant_5_name), getString(R.string.restaurant_5_about), R.drawable.georgios_pizza));
         cards.add(new Card(getString(R.string.restaurant_6_name), getString(R.string.restaurant_6_about), R.drawable.elbow_room));
+
+        CustomCardAdapter restaurantAdapter = new CustomCardAdapter(this, cards);
+        recycle.setAdapter(restaurantAdapter);
 
 
 
