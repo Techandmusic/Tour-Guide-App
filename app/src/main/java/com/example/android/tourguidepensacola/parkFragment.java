@@ -23,11 +23,6 @@ public class parkFragment extends Fragment {
         cards.add(new Card(getString(R.string.park_3_name), getString(R.string.park_3_about), R.drawable.veterans_park));
         cards.add(new Card(getString(R.string.park_4_name), getString(R.string.park_4_about), R.drawable.seville_square));
 
-        CustomCardAdapter adapter = new CustomCardAdapter(cards);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
 
         return view;
     }

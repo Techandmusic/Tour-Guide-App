@@ -25,11 +25,11 @@ public class historicalFragment extends Fragment {
         cards.add(new Card(getString(R.string.site_5_name), getString(R.string.site_5_about), R.drawable.crystal_icehouse));
         cards.add(new Card(getString(R.string.site_6_name), getString(R.string.site_6_about), R.drawable.grafitti_bridge));
 
-        CustomCardAdapter adapter = new CustomCardAdapter(cards);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
+
+
+
+
+
 
         return view;
     }

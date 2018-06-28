@@ -10,9 +10,10 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
 
-    public TourGuidePagerAdapter(FragmentManager fm) {
+    public TourGuidePagerAdapter(Context context, FragmentManager fm) {
         super(fm);
-        mContext = Context;
+        mContext = context;
+
     }
 
     @Override
@@ -36,7 +37,7 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
         return 4;
     }
 
-    @Nullable
+
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position) {

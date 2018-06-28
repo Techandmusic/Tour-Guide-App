@@ -26,11 +26,7 @@ public class restaurantFragment extends Fragment {
         cards.add(new Card(getString(R.string.restaurant_5_name), getString(R.string.restaurant_5_about), R.drawable.georgios_pizza));
         cards.add(new Card(getString(R.string.restaurant_6_name), getString(R.string.restaurant_6_about), R.drawable.elbow_room));
 
-        CustomCardAdapter adapter = new CustomCardAdapter(cards);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
+
 
         return view;
     }

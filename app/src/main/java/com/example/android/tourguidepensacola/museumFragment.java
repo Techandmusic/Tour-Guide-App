@@ -26,11 +26,7 @@ public class museumFragment extends Fragment {
         cards.add(new Card(getString(R.string.museum_5_name), getString(R.string.museum_5_about), R.drawable.museum_of_industry));
         cards.add(new Card(getString(R.string.museum_6_name), getString(R.string.museum_6_about), R.drawable.childrens_museum));
 
-        CustomCardAdapter adapter = new CustomCardAdapter(cards);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
+
 
         return view;
 
