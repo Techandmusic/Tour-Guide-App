@@ -19,6 +19,12 @@ public class restaurantFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment, container, false);
 
         ArrayList<Card> cards = new ArrayList<>();
+        cards.add(new Card(getString(R.string.restaurant_1_name), getString(R.string.restaurant_1_about), R.drawable.oar_house));
+        cards.add(new Card(getString(R.string.restaurant_2_name), getString(R.string.restaurant_2_about), R.drawable.fish_house_atlas));
+        cards.add(new Card(getString(R.string.restaurant_3_name), getString(R.string.restaurant_3_about), R.drawable.jerrys_drive_in));
+        cards.add(new Card(getString(R.string.restaurant_4_name), getString(R.string.restaurant_4_about), R.drawable.dharma_blue));
+        cards.add(new Card(getString(R.string.restaurant_5_name), getString(R.string.restaurant_5_about), R.drawable.georgios_pizza));
+        cards.add(new Card(getString(R.string.restaurant_6_name), getString(R.string.restaurant_6_about), R.drawable.elbow_room));
 
         CustomCardAdapter adapter = new CustomCardAdapter(cards);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);

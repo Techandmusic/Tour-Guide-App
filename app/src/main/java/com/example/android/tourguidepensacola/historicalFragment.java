@@ -18,6 +18,12 @@ public class historicalFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment, container, false);
 
         ArrayList<Card> cards = new ArrayList<>();
+        cards.add(new Card(getString(R.string.site_1_name), getString(R.string.site_1_about), R.drawable.dorr_house));
+        cards.add(new Card(getString(R.string.site_2_name), getString(R.string.site_2_about), R.drawable.fort_pickens));
+        cards.add(new Card(getString(R.string.site_3_name), getString(R.string.site_3_about), R.drawable.fort_barrancas));
+        cards.add(new Card(getString(R.string.site_4_name), getString(R.string.site_4_about), R.drawable.fort_george));
+        cards.add(new Card(getString(R.string.site_5_name), getString(R.string.site_5_about), R.drawable.crystal_icehouse));
+        cards.add(new Card(getString(R.string.site_6_name), getString(R.string.site_6_about), R.drawable.grafitti_bridge));
 
         CustomCardAdapter adapter = new CustomCardAdapter(cards);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);

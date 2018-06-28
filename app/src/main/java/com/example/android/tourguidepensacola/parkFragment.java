@@ -13,12 +13,15 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class parkFragment extends Fragment {
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment, container, false);
 
         ArrayList<Card> cards = new ArrayList<>();
+        cards.add(new Card(getString(R.string.park_1_name), getString(R.string.park_1_about), R.drawable.bartram_park));
+        cards.add(new Card(getString(R.string.park_2_name), getString(R.string.park_2_about), R.drawable.bayview_park));
+        cards.add(new Card(getString(R.string.park_3_name), getString(R.string.park_3_about), R.drawable.veterans_park));
+        cards.add(new Card(getString(R.string.park_4_name), getString(R.string.park_4_about), R.drawable.seville_square));
 
         CustomCardAdapter adapter = new CustomCardAdapter(cards);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
