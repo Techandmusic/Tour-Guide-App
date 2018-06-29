@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-// TODO Add visual polish to app
-// TODO Adjust Image scaling. Try different scale types to se which works best
+
+
 
 /* Image attribution
 *  theoarhouse.com
@@ -68,3 +68,8 @@ public class MainActivity extends AppCompatActivity {
 *  pnj.com
 *  roadsideamerica.com
 *  pinterest.com*/
+
+/*Code Attribution
+* Although I didn't directly copy any code I did draw some inspiration from github.com/TheBaileyBrew/JurrasicTourGuide. Big Thanks!!
+* I also found the article at https://willowtreeapps.com/ideas/android-fundamentals-working-with-the-recyclerview-adapter-and-viewholder-pattern/ quite helpful
+ * */
