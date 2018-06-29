@@ -42,13 +42,14 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-// TODO Add Location Descriptions to strings.xml (Done)
-// TODO Import location images to drawable folder (Done)
-// TODO Create Fragments for lists (Done)
-// TODO Create ViewPager (Done)
-// TODO Create Tabs and tabView for navigation
-// TODO Modify MainActivity to use tabView for navigation
+
+
+
+
+
+
 // TODO Add visual polish to app
+// TODO Adjust Image scaling. Try different scale types to se which works best
 
 /* Image attribution
 *  theoarhouse.com

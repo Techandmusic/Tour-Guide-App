@@ -5,7 +5,7 @@
     <dimen name="medium_margin">16dp</dimen>
     <dimen name="small_margin">8dp</dimen>
     <dimen name="buffer_margin">12dp</dimen>
-    <dimen name="card_edges">220dp</dimen>
+    <dimen name="card_edges">250dp</dimen>
     <dimen name="corners">4dp</dimen>
     <dimen name="name_text">18sp</dimen>
     <dimen name="text_margin">16dp</dimen>
