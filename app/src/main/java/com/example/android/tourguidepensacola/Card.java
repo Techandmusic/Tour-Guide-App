@@ -3,7 +3,6 @@ package com.example.android.tourguidepensacola;
 public class Card {
 
     //Constant value representing that no image was supplied for this card
-    //May be removed if not needed
     private static final int NO_IMAGE_PROVIDED = -1;
     //Name of the location on the card
     private String cardName;

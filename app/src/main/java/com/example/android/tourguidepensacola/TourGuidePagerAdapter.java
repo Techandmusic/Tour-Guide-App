@@ -9,13 +9,13 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
-
+    //Class constructor
     public TourGuidePagerAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
 
     }
-
+    //getItem returns Fragment based on position
     @Override
     public Fragment getItem(int position) {
         switch (position) {
@@ -31,13 +31,14 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
                 return null;
         }
     }
-
+    //getCount returns number of Fragments
     @Override
     public int getCount() {
         return 4;
     }
 
-
+    //getPageTitle returns string resource associated with a fragment
+    //according to position
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position) {
