@@ -16,13 +16,17 @@ import java.util.ArrayList;
 public class restaurantFragment extends Fragment {
     //Fragment's Context Variable
     private Context mContext;
+
     //Create instance of Fragment
-    public restaurantFragment() {}
+    public restaurantFragment() {
+    }
+
     //Fragment's built in getContext method
     public Context getmContext() {
         mContext = this.getContext();
         return mContext;
     }
+
     //Create view and perform additional tasks
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -42,7 +46,6 @@ public class restaurantFragment extends Fragment {
         //Create RecyclerView adapter and set it to the RecyclerView
         CustomCardAdapter restaurantAdapter = new CustomCardAdapter(getmContext(), cards);
         recycle.setAdapter(restaurantAdapter);
-
 
 
         return view;

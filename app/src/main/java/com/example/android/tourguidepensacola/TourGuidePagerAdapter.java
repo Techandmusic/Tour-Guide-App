@@ -15,6 +15,7 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
         mContext = context;
 
     }
+
     //getItem returns Fragment based on position
     @Override
     public Fragment getItem(int position) {
@@ -31,6 +32,7 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
                 return null;
         }
     }
+
     //getCount returns number of Fragments
     @Override
     public int getCount() {

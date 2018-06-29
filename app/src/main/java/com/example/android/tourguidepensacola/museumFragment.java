@@ -17,13 +17,17 @@ import java.util.ArrayList;
 public class museumFragment extends Fragment {
     //Fragment's Context Variable
     private Context mContext;
+
+    //Create instance of Fragment
+    public museumFragment() {
+    }
+
     //Fragment's built in getContext method
     public Context getmContext() {
         mContext = this.getContext();
         return mContext;
     }
-    //Create instance of Fragment
-    public museumFragment() {}
+
     //Create view and perform additional tasks
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -45,12 +49,7 @@ public class museumFragment extends Fragment {
         recycle.setAdapter(museumAdapter);
 
 
-
-
-
         return view;
-
-
 
 
     }

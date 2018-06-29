@@ -16,8 +16,11 @@ import java.util.ArrayList;
 public class parkFragment extends Fragment {
     //Fragment's Context Variable
     private Context mContext;
+
     //Create instance of Fragment
-    public parkFragment() {}
+    public parkFragment() {
+    }
+
     //Fragment's built in getContext method
     public Context getmContext() {
         mContext = this.getContext();

@@ -33,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
 
-
-
-
     }
 }
 
@@ -50,24 +47,24 @@ public class MainActivity extends AppCompatActivity {
 
 
 /* Image attribution
-*  theoarhouse.com
-*  tripadvisor.com
-*  leftatthefork.net
-*  yelp.com
-*  mygeorgiospizza.com
-*  zagat.com
-*  flickr.com
-*  historicpensacola.org
-*  pulsegulfcoast.com
-*  cityofpensacola.com
-*  gibbons-realty.com
-*  city-data.com
-*  filmnorthflorida.com
-*  pnj.com
-*  roadsideamerica.com
-*  pinterest.com*/
+ *  theoarhouse.com
+ *  tripadvisor.com
+ *  leftatthefork.net
+ *  yelp.com
+ *  mygeorgiospizza.com
+ *  zagat.com
+ *  flickr.com
+ *  historicpensacola.org
+ *  pulsegulfcoast.com
+ *  cityofpensacola.com
+ *  gibbons-realty.com
+ *  city-data.com
+ *  filmnorthflorida.com
+ *  pnj.com
+ *  roadsideamerica.com
+ *  pinterest.com*/
 
 /*Code Attribution
-* Although I didn't directly copy any code I did draw some inspiration from github.com/TheBaileyBrew/JurrasicTourGuide. Big Thanks!!
-* I also found the article at https://willowtreeapps.com/ideas/android-fundamentals-working-with-the-recyclerview-adapter-and-viewholder-pattern/ quite helpful
+ * Although I didn't directly copy any code I did draw some inspiration from github.com/TheBaileyBrew/JurrasicTourGuide. Big Thanks!!
+ * I also found the article at https://willowtreeapps.com/ideas/android-fundamentals-working-with-the-recyclerview-adapter-and-viewholder-pattern/ quite helpful
  * */
