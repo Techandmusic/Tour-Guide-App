@@ -15,7 +15,7 @@ public class CustomCardAdapter extends RecyclerView.Adapter<CustomCardAdapter.Ca
     private Context context;
     private LayoutInflater inflater;
 
-    public CustomCardAdapter(museumFragment context, ArrayList<Card> cards) {
+    public CustomCardAdapter(Context context, ArrayList<Card> cards) {
         this.inflater = LayoutInflater.from(context);
         this.cards = cards;
 

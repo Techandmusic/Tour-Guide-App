@@ -1,5 +1,6 @@
 package com.example.android.tourguidepensacola;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,8 +14,14 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class historicalFragment extends Fragment {
+    private Context mContext;
 
     public historicalFragment() {}
+
+    public Context getmContext() {
+        mContext = this.getContext();
+        return mContext;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -32,7 +39,7 @@ public class historicalFragment extends Fragment {
         cards.add(new Card(getString(R.string.site_5_name), getString(R.string.site_5_about), R.drawable.crystal_icehouse));
         cards.add(new Card(getString(R.string.site_6_name), getString(R.string.site_6_about), R.drawable.grafitti_bridge));
 
-        CustomCardAdapter historicalAdapter = new CustomCardAdapter(this, cards);
+        CustomCardAdapter historicalAdapter = new CustomCardAdapter(getmContext(), cards);
         recycle.setAdapter(historicalAdapter);
 
 

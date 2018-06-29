@@ -1,5 +1,6 @@
 package com.example.android.tourguidepensacola;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,8 +14,14 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class parkFragment extends Fragment {
+    private Context mContext;
 
     public parkFragment() {
+    }
+
+    public Context getmContext() {
+        mContext = this.getContext();
+        return mContext;
     }
 
 
@@ -32,7 +39,7 @@ public class parkFragment extends Fragment {
         parkCards.add(new Card(getString(R.string.park_3_name), getString(R.string.park_3_about), R.drawable.veterans_park));
         parkCards.add(new Card(getString(R.string.park_4_name), getString(R.string.park_4_about), R.drawable.seville_square));
 
-        CustomCardAdapter parkAdapter = new CustomCardAdapter(this, parkCards);
+        CustomCardAdapter parkAdapter = new CustomCardAdapter(getmContext(), parkCards);
         recycle.setAdapter(parkAdapter);
 
 

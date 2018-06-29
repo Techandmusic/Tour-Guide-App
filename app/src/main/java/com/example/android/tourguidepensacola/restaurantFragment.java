@@ -1,5 +1,6 @@
 package com.example.android.tourguidepensacola;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,8 +14,14 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class restaurantFragment extends Fragment {
+    private Context mContext;
 
     public restaurantFragment() {}
+
+    public Context getmContext() {
+        mContext = this.getContext();
+        return mContext;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -32,7 +39,7 @@ public class restaurantFragment extends Fragment {
         cards.add(new Card(getString(R.string.restaurant_5_name), getString(R.string.restaurant_5_about), R.drawable.georgios_pizza));
         cards.add(new Card(getString(R.string.restaurant_6_name), getString(R.string.restaurant_6_about), R.drawable.elbow_room));
 
-        CustomCardAdapter restaurantAdapter = new CustomCardAdapter(this, cards);
+        CustomCardAdapter restaurantAdapter = new CustomCardAdapter(getmContext(), cards);
         recycle.setAdapter(restaurantAdapter);
 
 
