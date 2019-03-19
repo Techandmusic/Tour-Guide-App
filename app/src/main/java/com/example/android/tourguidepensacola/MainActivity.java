@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 }
 
 //Working version with original code
+//TODO Consolidate fragments in ViewPager
+//TODO Switch app to loading cards from database
+
 
 
 

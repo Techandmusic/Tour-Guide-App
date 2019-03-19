@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cardImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cardName"
+        style="@style/TextViewStyle" />
+
+    <TextView
+        android:id="@+id/cardDescription"
+        style="@style/TextViewStyle" />
+
+    <TextView
+        android:id="@+id/address"
+       style="@style/TextViewStyle" />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/TextViewStyle" />
+
+</LinearLayout>
