@@ -12,17 +12,18 @@ import com.example.android.tourguidepensacola.R;
 
 import java.util.ArrayList;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class parkFragment extends Fragment {
+public abstract class baseFragment extends Fragment
+{
     //Fragment's Context Variable
     private Context mContext;
-
-    //Create instance of Fragment
-    public parkFragment() {
-    }
+    //ArrayList to store cards
+    private ArrayList<Card> cards;
 
     //Fragment's built in getContext method
     public Context getmContext() {
@@ -30,25 +31,26 @@ public class parkFragment extends Fragment {
         return mContext;
     }
 
-    //Create view and perform additional tasks
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
+    {
         View view = inflater.inflate(R.layout.fragment, container, false);
         //Create RecyclerView, set FixedSize property, and LayoutManager
         RecyclerView recycle = (RecyclerView) view.findViewById(R.id.recycler_view);
         recycle.setHasFixedSize(true);
         recycle.setLayoutManager(new LinearLayoutManager(getActivity()));
-        //Create ArrayList of cards, and cards for this Fragment's category
-        ArrayList<Card> parkCards = new ArrayList<>();
-        parkCards.add(new Card(getString(R.string.park_1_name), getString(R.string.park_1_about), R.drawable.bartram_park));
-        parkCards.add(new Card(getString(R.string.park_2_name), getString(R.string.park_2_about), R.drawable.bayview_park));
-        parkCards.add(new Card(getString(R.string.park_3_name), getString(R.string.park_3_about), R.drawable.veterans_park));
-        parkCards.add(new Card(getString(R.string.park_4_name), getString(R.string.park_4_about), R.drawable.seville_square));
+        //Add cards to ArrayList
+        cards = new ArrayList<>();
         //Create RecyclerView adapter and set it to the RecyclerView
-        CustomCardAdapter parkAdapter = new CustomCardAdapter(getmContext(), parkCards);
-        recycle.setAdapter(parkAdapter);
-
+        CustomCardAdapter museumAdapter = new CustomCardAdapter(getmContext(), cards);
+        recycle.setAdapter(museumAdapter);
 
         return view;
+    }
+
+    public void addCards(String cardName, String cardAbout, int imageResourceId)
+    {
+        cards.add(new Card(cardName, cardAbout, imageResourceId));
     }
 }

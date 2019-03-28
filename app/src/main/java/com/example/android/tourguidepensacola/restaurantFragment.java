@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.android.tourguidepensacola.Card;
+import com.example.android.tourguidepensacola.CustomCardAdapter;
+import com.example.android.tourguidepensacola.R;
+
 import java.util.ArrayList;
 
 import androidx.fragment.app.Fragment;
