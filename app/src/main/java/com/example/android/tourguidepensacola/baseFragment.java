@@ -31,6 +31,11 @@ public abstract class baseFragment extends Fragment
         return mContext;
     }
 
+    public void initViews()
+    {
+        CustomCardAdapter mAdapter = new CustomCardAdapter(getmContext(), cards);
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
@@ -43,8 +48,9 @@ public abstract class baseFragment extends Fragment
         //Add cards to ArrayList
         cards = new ArrayList<>();
         //Create RecyclerView adapter and set it to the RecyclerView
-        CustomCardAdapter museumAdapter = new CustomCardAdapter(getmContext(), cards);
-        recycle.setAdapter(museumAdapter);
+        CustomCardAdapter mAdapter = new CustomCardAdapter(getmContext(), cards);
+        recycle.setAdapter(mAdapter);
+
 
         return view;
     }
