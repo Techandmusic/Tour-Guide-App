@@ -1,16 +1,12 @@
 package com.example.android.tourguidepensacola;
 
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.design.widget.TabLayout;
+import com.google.android.material.tabs.TabLayout;
 
-import com.example.android.tourguidepensacola.R;
 
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-//Working version with original code
+
 //TODO Consolidate fragments in ViewPager
 //TODO Switch app to loading cards from database
 
